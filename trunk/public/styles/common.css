@@ -1,0 +1,51 @@
+/* Rest CSS */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+
+/* 全局 */
+body{font-family: '微软雅黑', Arial, Helvetica, sans-serif, serif;font-size:13px;line-height:1.5em;background:#fff;color:#000;background: url(../images/front/topbg.gif) repeat-x} 
+td,th,div{word-break:break-all;word-wrap:break-word} /*设置td、th和div元素内的文本强行截断单词，此代码仅对ie有用。[ 没有重定义的必要 ]*/
+.c{clear:both;height:0px;font:0px/0px Arial;} /* 清除浮动样式 【没有重定义的必要】 */
+
+/* 通用样式 */
+.tal,.tl{text-align:left} /*文本左对齐*/
+.tac,.tc{text-align:center} /*文本居中对其*/
+.tar,.tr{text-align:right} /*文本右对齐*/
+.fr,#right{float:right} /*往右浮动*/
+.fl,#left{float:left} /*往左浮动*/
+.b{ font-weight:bold} /*文本粗体*/
+.tdn{ text-decoration:none} /*文本和链接无下划线*/
+.small{ font-size:10px;} /*小文本字体*/
+.big{ font-size:14px;} /*大号文本字体*/
+.fsn{ font-size:12px} /*正常文本字体大小*/
+.fn{ font-weight:normal} /*正常的字体粗细*/
+.lh0{ line-height:0} /*行高为零*/
+.yellow {color:#0c2f86} /*文本或者链接颜色*/
+.gray{ color:#aaa} /*文本或者链接颜色*/
+.keep{ word-break:keep-all; word-spacing:normal} /*保持单词不换行*/
+.bt{background:#012E53;color:#fff;font-size:12px; } /*全站按钮样式*/
+.blank{margin-top:8px;}
+/* 通用样式 */
+/*a link 基本连接颜色*/
+a{color:#000; text-decoration:none;} /*全局链接颜色*/
+a:hover{text-decoration:underline;} /*鼠标覆盖链接以后的效果*/
+a.noul{ text-decoration:none} /*没有下划线的链接样式【无需修改】*/
+a.active{background:#0C5896; color:#fff} /*处于激活状态的链接样式*/
+a.active:hover{color:#0C5896; background:none} /*处于激活状态下的链接被鼠标覆盖后的样式*/
+h1{color:#0c2f86;font-size:24.5px; padding:.6em 0 0; margin-top:1em} /*一号标题的样式，依次定义了文本颜色、字体大小、内填白和上外补白*/
+h2{ font-size:15px; padding:.5em .6em .3em; color:#0c2f86; } /*二号标题的样式，依次定义了字体大小，内填白和文本颜色*/
+h3{ font-size:14px; color:#000} /*三号标题的样式，依次定义了字体大小和文本颜色*/
+h4{ font:16px Georgia; display:inline} /*四号标题的样式，一次定义了字体大小和族名，以及渲染方式【无需改动】*/
+.inp {border-color:#C0C0C0 #EDEDED #EDEDED #C0C0C0;border-style:solid;border-width:1px;color:#000000;height:16px;line-height:16px;margin: auto 0.3em 0.3em auto;padding:1px 0 1px 3px;vertical-align:middle;width:200px;}
+.but { background:#FFF; border:1px solid #d0d0d0; height:21px; width:64px; border-left:4px solid #d0d0d0;}
+
+#container{margin:0 auto;background:url(../images/front/logo.gif) no-repeat scroll 26px 22px transparent;text-align:center;width:100%;}/* 主容器 */
+/* 主体设置及左部 */
+#main{ margin:0 auto; padding-top:0;text-align:left;width:100%;}
+#header{margin-bottom:1em;  margin:0 auto;height:166px;}
+#left{ width:78%; padding-right:10px;border-right:1px solid #d0d0d0;}/* 左 */
+#right{ width:21%;}/* 右 */
+
+/* 底部 */
+#footer{ color:#536370;margin:1px 0 0;padding:14px 0;background: #F0F1F3; border-top:1px solid #C5DCCF}
+
+#copyright{ text-align:center;margin:15px 60px;}

@@ -1,0 +1,30 @@
+<div>
+    <p>
+        <h1 id="an-error-occurred">An error occurred</h1>
+    </p>
+    <br />
+    <p>
+        <h3 id=""><?php echo $this->message ?></h3>
+    </p>
+    <br />
+    <?php
+    if ('production' != $this->env) {
+    ?>
+        <p>
+            <h4>Exception information:</h4>
+            <strong>Message : <?php echo $this->exception->getMessage(); ?></strong>
+        </p>
+        <br /><br />
+        <p>
+            <h4 id="stack-trace">Stack trace:</h4>
+			<pre><?php echo $this->exception->getTraceAsString(); ?></pre>
+        </p>
+        <br />
+        <p>
+            <h4 id="request-parameters">Request Parameters:</h4>
+            <code><?php var_dump($this->request->getParams()); ?></code>
+        </p>
+    <?php
+    }
+    ?>
+</div>

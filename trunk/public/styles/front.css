@@ -1,0 +1,40 @@
+#container #header #menu {font-size:16px;height:38px;left:120px;position:absolute;text-align:right;top:92px;}
+#container #header #menu li {float:left;height:28px;}
+.menuA:link, .menuA:visited {color:#353528;float:left;font-weight:bold;height:16px;padding:2px 4px;text-align:center;text-decoration:none;}
+.menuA:hover{ color:#2ba806}
+
+#main{ border-top:1px solid #CBCCCE}
+.paginator{ line-height:25px; border-bottom:1px solid #1a1a1a}
+.paginator a,.paginator .paginatorinfo{color:#5C6B78;padding:2px 4px;text-decoration:none;}
+.paginator .currentpage{color:#FF0000;font-size:16px;font-weight:bold;}
+.blockmsg{ border-bottom:2px solid #181818;}
+.blockmsg .icon{width:40px; text-align: center; font-size: 20px; color:#A6D53B; margin-top:-2px;}
+.msgtitle{ line-height:30px;}
+.msgtitle .username{width:50px; font-weight:bold; font-size:14px;}
+.msgtitle .times{font-family:Georgia}
+.msgtitle .ip{ color:#d0d0d0; font-style:italic; text-indent:25px;}
+.blockmsg p{padding-left:40px;padding-bottom:10px;}
+
+
+.description, .hint{color:#797979;left:300px;position:absolute;top:0;}
+
+.zend_form, .gbTable, .gbDiv{ margin:10px;}
+.zend_form .errors{color:red; margin-left:60px;}
+.zend_form dd{position: relative; clear:right;}
+.zend_form dt{ float:left;width:60px;}
+.zend_form dd img{border:1px solid #d0d0d0}
+
+
+.gbTable td{vertical-align: top;}
+.gbTable .errors{color:red; }
+
+.gbDiv .errors{color:red; }
+.gbDiv div{position: relative; clear:right;}
+.gbDiv label{ float:left;width:50px;}
+.gbDiv .errors{color:red; margin-left:50px;}
+
+.captcha{ width:60px; font-size:14px; font-weight:bold;margin-left:60px;}
+
+#writitle{ width:140px; line-height:25px; height:25px; border-bottom:2px solid #666; margin-left:10px;padding-left:10px; font-size:16px; font-weight:bold;}
+#writitle i{ font-style:none; border-left:2px solid red; padding-left:8px}
+#footer p{ font-size:14px; }

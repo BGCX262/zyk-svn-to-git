@@ -1,0 +1,17 @@
+<ul id="shortcut">
+  <li class="write"><a href="<?php echo $this->U('article', 'write')?>" target="main" title="撰写文章">撰写</a></li>
+  <li class="comment"><a href="<?php echo $this->U('comment')?>" target="main" title="查看未审核的评论">评论</a></li>
+</ul>
+<ul id="menu">
+  <li><a href="<?php echo $this->U('article')?>" target="main">文章管理</a></li>
+  <li><a href="<?php echo $this->U('comment')?>" target="main">评论管理</a></li>
+  <li><a href="<?php echo $this->U('tag')?>" target="main">标签管理</a></li>
+  <li><a href="<?php echo $this->U('user')?>" target="main">用户管理</a></li>
+  <li><a href="<?php echo $this->U('link')?>" target="main">链接管理</a></li>
+  <li><a href="<?php echo $this->U('page')?>" target="main">页面管理</a></li>
+  <li><a href="<?php echo $this->U('attachment')?>" target="main">附件管理</a></li>
+  <li><a href="<?php echo $this->U('config')?>" target="main">系统设置</a></li>
+  <li><a href="<?php echo $this->U('data')?>" target="main">数据维护</a></li>
+  <li><a href="<?php echo $this->U('ucenter')?>" target="main">个人管理</a></li>
+</ul>
+<div id="copyright"><?php echo $this->render('footer.phtml');?></div>

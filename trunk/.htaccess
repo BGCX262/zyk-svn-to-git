@@ -1,0 +1,63 @@
+# Directory and index file
+# 文件夹及索引
+# ===================
+<IfModule dir_module>
+
+    # By default allow all access
+    # 默认所有人都可以访问
+    # ==========================================
+    Options -Indexes -MultiViews +FollowSymLinks
+    Order allow,deny
+    Allow from all
+
+    # Directory default index
+    # 文件夹默认索引文件
+    # ===========================================
+    DirectoryIndex index.php index.html index.htm
+
+</IfModule>
+
+
+
+# Url rewrite
+# Url 重写
+# ======================
+<IfModule mod_rewrite.c>
+
+    # Rewrite enable
+    # Url 重写功能开启
+    # ==============
+    RewriteEngine On
+
+    # Rewrite base path to your site
+    # Url 重写基本路径
+    # ===========
+    RewriteBase /
+
+    # Forbidden access to htaccess file
+    # 禁止访问 .htaccess 文件
+    # ============================
+    RewriteRule ^\.htaccess$ - [F]
+
+    # Rewrite for index if request is empty or did not mentioned before
+    # 如果请求不存在，或者未预先定义，则重定向到 index.php
+    # ================================================================
+    RewriteCond %{REQUEST_URI} =""
+    RewriteRule ^.*$ /public/index.php [NC,L]
+
+    # Rewrite for public if request is not the resource under public or did not mentioned before
+    # 如果请求不是一个可用资源，或者未预先定义，则重定向到 public/ 资源目录
+    # ================================================================
+    RewriteCond %{REQUEST_URI} !^/public/.*$
+    RewriteRule ^(.*)$ /public/$1
+
+    # Never rewrite for existing files, directories and links
+    # 从不为确实存在的文件，文件夹和文件链接进行重定向
+    # ==============================================
+    RewriteCond %{REQUEST_FILENAME} -s [OR]
+    RewriteCond %{REQUEST_FILENAME} -l [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^.*$ - [NC,L]
+    RewriteRule ^public/.*$ /public/index.php [NC,L]
+
+</IfModule>
